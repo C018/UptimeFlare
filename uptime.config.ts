@@ -31,7 +31,8 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       statusPageLink: 'https://pet.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200]
+      expectedCodes: [200],
+	  checkLocationWorkerRoute: 'https://twget.okr.pub/'
     },
     // 示例TCP监控
     {
