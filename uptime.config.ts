@@ -27,7 +27,7 @@ const workerConfig = {
       // target是有效的URL
       target: 'https://okr.pub',
       // [可选] tooltip只用于状态页面显示工具提示
-      tooltip: '这是这个监控的工具提示',
+      tooltip: '这是我的主页',
       // [可选] statusPageLink只用于状态页面上的可点击链接
       statusPageLink: 'https://okr.pub',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
@@ -37,7 +37,7 @@ const workerConfig = {
       // [可选] 需要发送的头部
       headers: {
         'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+        Authorization: '',
       },
       // [可选] 需要发送的主体
       body: '018',
@@ -45,7 +45,7 @@ const workerConfig = {
       responseKeyword: 'success',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
-      checkLocationWorkerRoute: 'https://okr.pub',
+      checkLocationWorkerRoute: '',
     },
     // 示例TCP监控
     {
@@ -56,7 +56,7 @@ const workerConfig = {
       // target对于tcp监控应该为主机:端口
       target: '1.1.1.1:53',
       tooltip: '1111DNS可用性监控',
-      statusPageLink: 'https://status.okr.pub',
+      statusPageLink: 'https://1.1.1.1',
       timeout: 5000,
     },
   ],
