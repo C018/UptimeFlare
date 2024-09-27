@@ -33,7 +33,7 @@ const workerConfig = {
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
       expectedCodes: [200],
       // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
-      responseKeyword: 'Success',
+      // responseKeyword: '',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
       // checkLocationWorkerRoute: ''
