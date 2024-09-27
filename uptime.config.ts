@@ -58,7 +58,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '轻找',
       // method应该是有效的HTTP方法
-      method: 'GET',
+      method: 'HEAD',
       // target是有效的URL
       target: 'https://qz.fsan-cloud.com/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -80,7 +80,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '哮友录',
       // method应该是有效的HTTP方法
-      method: 'GET',
+      method: 'HEAD',
       // target是有效的URL
       target: 'https://friend.fsan-cloud.com/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -115,7 +115,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '匀城智犬',
       // method应该是有效的HTTP方法
-      method: 'GET',
+      method: 'HEAD',
       // target是有效的URL
       target: 'https://yczq.dygayczq.com/',
       // [可选] tooltip只用于状态页面显示工具提示
