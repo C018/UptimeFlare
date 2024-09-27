@@ -32,7 +32,7 @@ const workerConfig = {
       statusPageLink: 'https://pet.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
       expectedCodes: [200],
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      // checkLocationWorkerRoute: ''
     },
     // 示例TCP监控
     {
@@ -43,7 +43,7 @@ const workerConfig = {
       // target对于tcp监控应该为主机:端口
       target: '47.108.77.41:80',
       tooltip: '云小宠服务器可用性监控',
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      // checkLocationWorkerRoute: ''
     },
     // 示例HTTP监控
     {
@@ -61,7 +61,7 @@ const workerConfig = {
       statusPageLink: 'https://qz.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
       expectedCodes: [200],
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      // checkLocationWorkerRoute: ''
     },
     // 示例HTTP监控
     {
@@ -79,7 +79,7 @@ const workerConfig = {
       statusPageLink: 'https://friend.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
       expectedCodes: [200],
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      // checkLocationWorkerRoute: ''
     },
     // 示例TCP监控
     {
@@ -90,7 +90,7 @@ const workerConfig = {
       // target对于tcp监控应该为主机:端口
       target: '47.108.51.220:80',
       tooltip: '轻找哮友录服务器可用性监控',
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      // checkLocationWorkerRoute: ''
     },
     // 示例HTTP监控
     {
@@ -108,7 +108,7 @@ const workerConfig = {
       statusPageLink: 'https://yczq.dygayczq.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
       expectedCodes: [200],
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      checkLocationWorkerRoute: 'https://twget.okr.pub/'
     },
     // 示例TCP监控
     {
@@ -119,7 +119,7 @@ const workerConfig = {
       // target对于tcp监控应该为主机:端口
       target: '101.37.76.72:80',
       tooltip: '匀城智犬服务器可用性监控',
-	  checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+      checkLocationWorkerRoute: 'https://twget.okr.pub/'
     },
   ],
   notification: {
