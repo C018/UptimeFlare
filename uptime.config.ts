@@ -31,9 +31,7 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       statusPageLink: 'https://pet.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200],
-      // [可选] 超时（以毫秒为单位），如果未指定，默认为10000
-      timeout: 10000,
+      expectedCodes: [200]
     },
     // 示例TCP监控
     {
@@ -43,8 +41,7 @@ const workerConfig = {
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
       target: '47.108.77.41:443',
-      tooltip: '云小宠服务器可用性监控',
-      timeout: 5000,
+      tooltip: '云小宠服务器可用性监控'
     },
   ],
   notification: {
