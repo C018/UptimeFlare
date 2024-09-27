@@ -31,21 +31,9 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       statusPageLink: 'https://pet.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [],
+      expectedCodes: [200],
       // [可选] 超时（以毫秒为单位），如果未指定，默认为10000
       timeout: 10000,
-      // [可选] 需要发送的头部
-      headers: {
-        'User-Agent': '',
-        Authorization: '',
-      },
-      // [可选] 需要发送的主体
-      body: '',
-      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
-      responseKeyword: '',
-      // [可选] 如果指定，检查将在你指定的区域运行，
-      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
-      checkLocationWorkerRoute: '',
     },
     // 示例TCP监控
     {
@@ -56,7 +44,6 @@ const workerConfig = {
       // target对于tcp监控应该为主机:端口
       target: '47.108.77.41:443',
       tooltip: '云小宠服务器可用性监控',
-      statusPageLink: '',
       timeout: 5000,
     },
   ],
@@ -72,7 +59,7 @@ const workerConfig = {
     // [可选] 发送通知前的宽限期（以分钟为单位）
     // 仅在监控在初始故障后连续N次检查中处于故障时发送通知
     // 如果未指定，通知将立即发送
-    gracePeriod: 5,
+    gracePeriod: 3,
   },
   callbacks: {
     onStatusChange: async (
