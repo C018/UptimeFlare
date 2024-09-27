@@ -40,7 +40,7 @@ const workerConfig = {
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
-      target: '47.108.77.41:443',
+      target: '47.108.77.41:22',
       tooltip: '云小宠服务器可用性监控'
     },
   ],
