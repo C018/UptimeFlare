@@ -50,7 +50,7 @@ const workerConfig = {
     // 示例TCP监控
     {
       id: '1111_tcp_monitor',
-      name: '1111DNSTCP监控',
+      name: '1111DNSTCP',
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
