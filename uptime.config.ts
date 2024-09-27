@@ -19,17 +19,17 @@ const workerConfig = {
     // 示例HTTP监控
     {
       // id应该是唯一的，如果id保持不变将保留历史记录
-      id: 'home',
+      id: 'yxc',
       // name用于状态页面和回调消息
-      name: '我的主页',
+      name: '云小宠',
       // method应该是有效的HTTP方法
       method: 'GET',
       // target是有效的URL
-      target: 'https://okr.pub',
+      target: 'https://pet.fsan-cloud.com/',
       // [可选] tooltip只用于状态页面显示工具提示
-      tooltip: '这是我的主页',
+      tooltip: '云小宠-芸芸相伴，宠你所宠',
       // [可选] statusPageLink只用于状态页面上的可点击链接
-      statusPageLink: 'https://okr.pub',
+      statusPageLink: 'https://pet.fsan-cloud.com/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
       expectedCodes: [],
       // [可选] 超时（以毫秒为单位），如果未指定，默认为10000
@@ -42,21 +42,21 @@ const workerConfig = {
       // [可选] 需要发送的主体
       body: '',
       // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
-      responseKeyword: 'success',
+      responseKeyword: '',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
       checkLocationWorkerRoute: '',
     },
     // 示例TCP监控
     {
-      id: '1111_tcp_monitor',
-      name: '1111DNSTCP',
+      id: 'yxc-server',
+      name: '云小宠服务器',
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
-      target: '1.1.1.1:53',
-      tooltip: '1111DNS可用性监控',
-      statusPageLink: 'https://1.1.1.1',
+      target: '47.108.77.41:443',
+      tooltip: '云小宠服务器可用性监控',
+      statusPageLink: '',
       timeout: 5000,
     },
   ],
