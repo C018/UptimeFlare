@@ -23,7 +23,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '我的主页',
       // method应该是有效的HTTP方法
-      method: 'POST',
+      method: 'GET',
       // target是有效的URL
       target: 'https://okr.pub',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -31,16 +31,16 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       statusPageLink: 'https://okr.pub',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200],
+      expectedCodes: [],
       // [可选] 超时（以毫秒为单位），如果未指定，默认为10000
       timeout: 10000,
       // [可选] 需要发送的头部
       headers: {
-        'User-Agent': 'Uptimeflare',
+        'User-Agent': '',
         Authorization: '',
       },
       // [可选] 需要发送的主体
-      body: '018',
+      body: '',
       // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
       responseKeyword: 'success',
       // [可选] 如果指定，检查将在你指定的区域运行，
