@@ -40,8 +40,79 @@ const workerConfig = {
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
-      target: '47.108.77.41:22',
+      target: '47.108.77.41:80',
       tooltip: '云小宠服务器可用性监控'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'qz',
+      // name用于状态页面和回调消息
+      name: '轻找',
+      // method应该是有效的HTTP方法
+      method: 'GET',
+      // target是有效的URL
+      target: 'https://qz.fsan-cloud.com/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: '轻找-专业防丢，找物平台',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://qz.fsan-cloud.com/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200]
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'friend',
+      // name用于状态页面和回调消息
+      name: '哮友录',
+      // method应该是有效的HTTP方法
+      method: 'GET',
+      // target是有效的URL
+      target: 'https://friend.fsan-cloud.com/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: '哮友录',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://friend.fsan-cloud.com/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200]
+    },
+    // 示例TCP监控
+    {
+      id: 'qz-friend-server',
+      name: '轻找哮友录服务器',
+      // method对于tcp监控应该为TCP_PING
+      method: 'TCP_PING',
+      // target对于tcp监控应该为主机:端口
+      target: '47.108.51.220:80',
+      tooltip: '轻找哮友录服务器可用性监控'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'yczq',
+      // name用于状态页面和回调消息
+      name: '匀城智犬',
+      // method应该是有效的HTTP方法
+      method: 'GET',
+      // target是有效的URL
+      target: 'https://yczq.dygayczq.com/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: '匀城智犬-城市犬只智能管理服务平台',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://yczq.dygayczq.com/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200]
+    },
+    // 示例TCP监控
+    {
+      id: 'yczq-server',
+      name: '匀城智犬服务器',
+      // method对于tcp监控应该为TCP_PING
+      method: 'TCP_PING',
+      // target对于tcp监控应该为主机:端口
+      target: '101.37.76.72:80',
+      tooltip: '匀城智犬服务器可用性监控'
     },
   ],
   notification: {
