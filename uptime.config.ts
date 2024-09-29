@@ -106,7 +106,7 @@ const workerConfig = {
       tooltip: '轻找哮友录服务器可用性监控',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
-      // checkLocationWorkerRoute: ''
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
     },
     // 示例HTTP监控
     {
