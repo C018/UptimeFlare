@@ -321,7 +321,7 @@ const workerConfig = {
     },
     // 示例TCP监控
     {
-      id: 'updn-cn',
+      id: 'udpn-cn',
       name: '中港专线国内段',
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
@@ -334,7 +334,7 @@ const workerConfig = {
     },
     // 示例TCP监控
     {
-      id: 'updn-hk',
+      id: 'udpn-hk',
       name: '中港专线香港段',
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
