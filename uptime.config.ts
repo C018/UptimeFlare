@@ -212,28 +212,6 @@ const workerConfig = {
     // 示例HTTP监控
     {
       // id应该是唯一的，如果id保持不变将保留历史记录
-      id: 'blog',
-      // name用于状态页面和回调消息
-      name: '个人博客',
-      // method应该是有效的HTTP方法
-      method: 'HEAD',
-      // target是有效的URL
-      target: 'https://blog.okr.pub/',
-      // [可选] tooltip只用于状态页面显示工具提示
-      tooltip: 'M. 杂食动物',
-      // [可选] statusPageLink只用于状态页面上的可点击链接
-      statusPageLink: 'https://blog.okr.pub/',
-      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200],
-      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
-      // responseKeyword: '',
-      // [可选] 如果指定，检查将在你指定的区域运行，
-      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
-      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
-    },
-    // 示例HTTP监控
-    {
-      // id应该是唯一的，如果id保持不变将保留历史记录
       id: 'ai',
       // name用于状态页面和回调消息
       name: 'Ai服务器',
