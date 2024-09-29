@@ -23,7 +23,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: 'UptimeFlare（本站）',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://status.okr.pub/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -45,7 +45,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '云小宠',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://pet.fsan-cloud.com/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -80,7 +80,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '轻找',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://qz.fsan-cloud.com/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -102,7 +102,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '哮友录',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://friend.fsan-cloud.com/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -137,7 +137,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '匀城智犬',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://yczq.dygayczq.com/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -172,7 +172,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '个人首页',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://okr.pub/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -194,7 +194,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: '个人博客',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://blog.okr.pub/',
       // [可选] tooltip只用于状态页面显示工具提示
@@ -238,7 +238,7 @@ const workerConfig = {
       // name用于状态页面和回调消息
       name: 'apprise服务器',
       // method应该是有效的HTTP方法
-      method: 'HEAD',
+      method: 'GET',
       // target是有效的URL
       target: 'https://apprise.okr.pub/',
       // [可选] tooltip只用于状态页面显示工具提示
