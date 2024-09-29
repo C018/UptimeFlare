@@ -300,12 +300,12 @@ const workerConfig = {
     // 示例TCP监控
     {
       id: 'updn-cn',
-      name: '中港专线国内三地段',
+      name: '中港专线国内段',
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
       target: 'ac.okr.pub:2053',
-      tooltip: '中港专线国内三地段可用性监控',
+      tooltip: '中港专线国内段可用性监控',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
       checkLocationWorkerRoute: 'https://cfget.okr.pub/'
