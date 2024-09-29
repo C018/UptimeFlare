@@ -19,6 +19,28 @@ const workerConfig = {
     // 示例HTTP监控
     {
       // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'UptimeFlare',
+      // name用于状态页面和回调消息
+      name: 'UptimeFlare（本站）',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://status.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: 'Cloudflare Workers 上的监控/状态页面，具有特定于地理位置的检查',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://status.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
       id: 'yxc',
       // name用于状态页面和回调消息
       name: '云小宠',
@@ -139,6 +161,199 @@ const workerConfig = {
       // target对于tcp监控应该为主机:端口
       target: '101.37.76.72:80',
       tooltip: '匀城智犬服务器可用性监控',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://twget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'okr',
+      // name用于状态页面和回调消息
+      name: '个人首页',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: '©Mr. Jiang',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'blog',
+      // name用于状态页面和回调消息
+      name: '个人博客',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://blog.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: 'M. 杂食动物',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://blog.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'blog',
+      // name用于状态页面和回调消息
+      name: '个人博客',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://blog.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: 'M. 杂食动物',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      statusPageLink: 'https://blog.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'ai',
+      // name用于状态页面和回调消息
+      name: 'Ai服务器',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://ai.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: '基于chatgpt的ai服务器',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      // statusPageLink: 'https://ai.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'apprise',
+      // name用于状态页面和回调消息
+      name: 'apprise服务器',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://apprise.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: 'apprise服务器可用性监控',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      // statusPageLink: 'https://apprise.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'bark',
+      // name用于状态页面和回调消息
+      name: 'bark服务器',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://bark.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: 'bark服务器可用性监控',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      // statusPageLink: 'https://bark.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例HTTP监控
+    {
+      // id应该是唯一的，如果id保持不变将保留历史记录
+      id: 'lp',
+      // name用于状态页面和回调消息
+      name: 'jc-ntk（香港自建服务器）',
+      // method应该是有效的HTTP方法
+      method: 'HEAD',
+      // target是有效的URL
+      target: 'https://lp.okr.pub/',
+      // [可选] tooltip只用于状态页面显示工具提示
+      tooltip: 'lp|jc-ntk服务器可用性监控',
+      // [可选] statusPageLink只用于状态页面上的可点击链接
+      // statusPageLink: 'https://lp.okr.pub/',
+      // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
+      expectedCodes: [200],
+      // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
+      // responseKeyword: '',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://cfget.okr.pub/'
+    },
+    // 示例TCP监控
+    {
+      id: 'updn-cn',
+      name: '中港专线国内三地段',
+      // method对于tcp监控应该为TCP_PING
+      method: 'TCP_PING',
+      // target对于tcp监控应该为主机:端口
+      target: 'ac.okr.pub:2053',
+      tooltip: '中港专线国内三地段可用性监控',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://twget.okr.pub/'
+    },
+    // 示例TCP监控
+    {
+      id: 'updn-hk',
+      name: '中港专线香港段',
+      // method对于tcp监控应该为TCP_PING
+      method: 'TCP_PING',
+      // target对于tcp监控应该为主机:端口
+      target: '194.99.79.252:1122',
+      tooltip: '中港专线香港段可用性监控',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://twget.okr.pub/'
+    },
+    // 示例TCP监控
+    {
+      id: 'qcloud-sg',
+      name: '腾讯云新加坡轻量服务器',
+      // method对于tcp监控应该为TCP_PING
+      method: 'TCP_PING',
+      // target对于tcp监控应该为主机:端口
+      target: '43.156.64.33:1122',
+      tooltip: '腾讯云新加坡轻量服务器可用性监控',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
       checkLocationWorkerRoute: 'https://twget.okr.pub/'
