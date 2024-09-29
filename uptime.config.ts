@@ -224,7 +224,7 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       // statusPageLink: 'https://ai.okr.pub/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200],
+      expectedCodes: [404],
       // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
       // responseKeyword: '',
       // [可选] 如果指定，检查将在你指定的区域运行，
@@ -268,7 +268,7 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       // statusPageLink: 'https://bark.okr.pub/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200],
+      expectedCodes: [404],
       // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
       // responseKeyword: '',
       // [可选] 如果指定，检查将在你指定的区域运行，
@@ -290,7 +290,7 @@ const workerConfig = {
       // [可选] statusPageLink只用于状态页面上的可点击链接
       // statusPageLink: 'https://lp.okr.pub/',
       // [可选] expectedCodes是一个可接受的HTTP响应码数组，如果未指定，默认为2xx
-      expectedCodes: [200],
+      expectedCodes: [501],
       // [可选] 如果指定，响应必须包含该关键词才能被视为正常。
       // responseKeyword: '',
       // [可选] 如果指定，检查将在你指定的区域运行，
