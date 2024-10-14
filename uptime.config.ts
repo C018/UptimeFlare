@@ -380,32 +380,6 @@ const workerConfig = {
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
       checkLocationWorkerRoute: 'https://twget.okr.pub/'
     },
-    // 示例TCP监控
-    {
-      id: 'qcloud-sg',
-      name: '腾讯云新加坡轻量服务器',
-      // method对于tcp监控应该为TCP_PING
-      method: 'TCP_PING',
-      // target对于tcp监控应该为主机:端口
-      target: '43.156.64.33:1122',
-      tooltip: '腾讯云新加坡轻量服务器可用性监控',
-      // [可选] 如果指定，检查将在你指定的区域运行，
-      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
-      checkLocationWorkerRoute: 'https://twget.okr.pub/'
-    },
-    // 示例TCP监控
-    {
-      id: 'scgf',
-      name: '四川电信高防服务器',
-      // method对于tcp监控应该为TCP_PING
-      method: 'TCP_PING',
-      // target对于tcp监控应该为主机:端口
-      target: 'scgf.okr.pub:1122',
-      tooltip: '四川电信高防服务器可用性监控',
-      // [可选] 如果指定，检查将在你指定的区域运行，
-      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
-      checkLocationWorkerRoute: 'https://twget.okr.pub/'
-    },
   ],
   notification: {
     // [可选] apprise API服务器URL
