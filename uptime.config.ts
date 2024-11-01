@@ -387,7 +387,7 @@ const workerConfig = {
       // method对于tcp监控应该为TCP_PING
       method: 'TCP_PING',
       // target对于tcp监控应该为主机:端口
-      target: '194.99.79.89:2053',
+      target: '92.223.121.112:1122',
       tooltip: '中港专线香港段可用性监控',
       // [可选] 如果指定，检查将在你指定的区域运行，
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
