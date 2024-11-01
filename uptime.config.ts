@@ -406,6 +406,19 @@ const workerConfig = {
       // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
       checkLocationWorkerRoute: 'https://twget.okr.pub/'
     },
+    // 示例TCP监控
+    {
+      id: 'udpn-hkg3',
+      name: '中港专线香港段Server-hkg3',
+      // method对于tcp监控应该为TCP_PING
+      method: 'TCP_PING',
+      // target对于tcp监控应该为主机:端口
+      target: '46.151.32.161:2053',
+      tooltip: '中港专线香港段可用性监控',
+      // [可选] 如果指定，检查将在你指定的区域运行，
+      // 在设置此值之前，请参考文档 https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup
+      checkLocationWorkerRoute: 'https://twget.okr.pub/'
+    },
   ],
   notification: {
     // [可选] apprise API服务器URL
